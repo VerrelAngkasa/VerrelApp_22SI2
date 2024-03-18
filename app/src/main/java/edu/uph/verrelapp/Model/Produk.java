@@ -1,10 +1,16 @@
 package edu.uph.verrelapp.Model;
 
-public class Produk {
+import io.realm.RealmObject;
+
+public class Produk extends RealmObject {
     // atribut
     private String namaProduk;
     private int hargaProduk;
     private int gambarProduk;
+
+    public Produk() {
+
+    }
 
     public Produk(String namaProduk, int hargaProduk, int gambarProduk) {
         this.namaProduk = namaProduk;
